@@ -1,0 +1,14 @@
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Persistence.deps.json
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Persistence.runtimeconfig.json
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Persistence.runtimeconfig.dev.json
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Persistence.dll
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Persistence.pdb
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Model.dll
+E:\Demo2\Todo\adminVue\Api\Persistence\bin\Release\netcoreapp2.2\Model.pdb
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.csprojAssemblyReference.cache
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.csproj.CoreCompileInputs.cache
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.AssemblyInfoInputs.cache
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.AssemblyInfo.cs
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.csproj.CopyComplete
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.dll
+E:\Demo2\Todo\adminVue\Api\Persistence\obj\Release\netcoreapp2.2\Persistence.pdb

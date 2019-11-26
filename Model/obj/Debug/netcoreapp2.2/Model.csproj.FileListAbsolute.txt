@@ -1,0 +1,9 @@
+E:\Demo2\Todo\adminVue\Api\Model\bin\Debug\netcoreapp2.2\Model.deps.json
+E:\Demo2\Todo\adminVue\Api\Model\bin\Debug\netcoreapp2.2\Model.dll
+E:\Demo2\Todo\adminVue\Api\Model\bin\Debug\netcoreapp2.2\Model.pdb
+E:\Demo2\Todo\adminVue\Api\Model\obj\Debug\netcoreapp2.2\Model.csproj.CoreCompileInputs.cache
+E:\Demo2\Todo\adminVue\Api\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfoInputs.cache
+E:\Demo2\Todo\adminVue\Api\Model\obj\Debug\netcoreapp2.2\Model.AssemblyInfo.cs
+E:\Demo2\Todo\adminVue\Api\Model\obj\Debug\netcoreapp2.2\Model.dll
+E:\Demo2\Todo\adminVue\Api\Model\obj\Debug\netcoreapp2.2\Model.pdb
+E:\Demo2\Todo\adminVue\Api\Model\obj\Debug\netcoreapp2.2\Model.csprojAssemblyReference.cache
