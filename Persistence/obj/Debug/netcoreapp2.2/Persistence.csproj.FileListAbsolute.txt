@@ -12,3 +12,16 @@ E:\Demo2\Todo\adminVue\Api\Persistence\bin\Debug\netcoreapp2.2\Model.pdb
 E:\Demo2\Todo\adminVue\Api\Persistence\obj\Debug\netcoreapp2.2\Persistence.csproj.CopyComplete
 E:\Demo2\Todo\adminVue\Api\Persistence\obj\Debug\netcoreapp2.2\Persistence.dll
 E:\Demo2\Todo\adminVue\Api\Persistence\obj\Debug\netcoreapp2.2\Persistence.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Persistence.deps.json
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Persistence.runtimeconfig.json
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Persistence.runtimeconfig.dev.json
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Persistence.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Persistence.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Model.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\bin\Debug\netcoreapp2.2\Model.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\obj\Debug\netcoreapp2.2\Persistence.csprojAssemblyReference.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\obj\Debug\netcoreapp2.2\Persistence.AssemblyInfoInputs.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\obj\Debug\netcoreapp2.2\Persistence.AssemblyInfo.cs
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\obj\Debug\netcoreapp2.2\Persistence.csproj.CopyComplete
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\obj\Debug\netcoreapp2.2\Persistence.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Persistence\obj\Debug\netcoreapp2.2\Persistence.pdb

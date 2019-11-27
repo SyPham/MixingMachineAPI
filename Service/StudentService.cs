@@ -2,6 +2,7 @@
 using Model;
 using Model.Dto;
 using Persistence;
+using Service.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -21,6 +22,8 @@ namespace Service
         object Test(string id);
         object Get();
         Task<object> GetRPM(string id);
+        object GetDetail(string id);
+        object GetDetail(string id, string value);
     }
     public class StudentService : IStudentService
     {
@@ -43,14 +46,9 @@ namespace Service
         }
         public object Test(string id)
         {
-            //var machineID = new SqlParameter("machineID", id);
-            //var sql = @"SELECT * FROM rawdata 
-            //            WHERE machineID = @machineID 
-            //            ORDER BY createddatetime DESC LIMIT 30";
             var model = _studentDbContext.rawdata
                 .Where(x => x.machineID == id)
                 .OrderByDescending(x => x.createddatetime)
-                
                 .Select(x => x.RPM)
                 .Take(30)
                 .ToArray().Reverse();
@@ -65,11 +63,73 @@ namespace Service
             //var sql = @"SELECT * FROM rawdata 
             //            WHERE machineID = @machineID 
             //            ORDER BY createddatetime DESC LIMIT 30";
-            var model = await _studentDbContext.rawdata.FirstOrDefaultAsync(x => x.machineID == id);
+            var model = await _studentDbContext.rawdata.OrderByDescending(x=>x.createddatetime).FirstOrDefaultAsync(x => x.machineID == id);
 
-            return model.RPM;
+            return new
+            {
+                model.RPM,
+                display = true
+            };
 
         }
+
+        public object GetDetail(string id, string value)
+        {
+            var format = "dddd, dd MMMM yyyy hh:mm tt";
+            
+            var startDate = new DateTime();
+            var endDate= new DateTime();
+            var start = Convert.ToDateTime(startDate);
+            var end = Convert.ToDateTime(endDate);
+            var model = new List<MachineDetail>();
+            var sequenceList = _studentDbContext.rawdata.Where(x => x.machineID == id).Select(y => new { y.createddatetime, y.sequence }).ToList();
+            if (!startDate.IsNullOrEmpty() && !endDate.IsNullOrEmpty())
+            {
+                sequenceList = sequenceList.Where(x => x.createddatetime.Date >= start.Date && x.createddatetime.Date <= end.Date).ToList();
+            };
+
+            foreach (var item in sequenceList.Distinct())
+            {
+                var vm = new MachineDetail();
+                vm.MachineID = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item.sequence).Select(y => y.machineID).FirstOrDefault();
+                vm.StartTime = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item.sequence).Select(y => y.createddatetime).Min().ToString(format);
+                vm.EndTime = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item.sequence).Select(y => y.createddatetime).Max().ToString(format);
+                vm.RPM = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item.sequence).Select(y => y.RPM).Average();
+                model.Add(vm);
+            }
+
+            model = model.ToArray().Reverse().ToList();
+
+            return new
+            {
+                model,
+                standard = _studentDbContext.setting.Where(x => x.id.Equals(id)).FirstOrDefault().standardRPM
+            };
+        }
+
+        public object GetDetail(string id)
+        {
+            id = id.ToUpper();
+            var model = new List<MachineDetail>();
+            var sequenceList = _studentDbContext.rawdata.Where(x => x.machineID == id).Select(y => y.sequence).Distinct().ToList();
+
+            foreach (var item in sequenceList)
+            {
+                var vm = new MachineDetail();
+                vm.MachineID = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.machineID).FirstOrDefault();
+                vm.StartTime = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.createddatetime).Min().ToString("dddd, dd MMMM yyyy hh:mm tt");
+                vm.EndTime = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.createddatetime).Max().ToString("dddd, dd MMMM yyyy hh:mm tt");
+                vm.RPM = _studentDbContext.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.RPM).Average();
+                model.Add(vm);
+            }
+            model = model.ToArray().Reverse().Take(15).ToList();
+            return new
+            {
+                model,
+                standard = _studentDbContext.setting.Where(x => x.id.Equals(id)).FirstOrDefault()?.standardRPM
+            };
+        }
+
         public IEnumerable<Student> GetAll()
         {
             var result = new List<Student>();

@@ -18,3 +18,16 @@ E:\Demo2\Todo\adminVue\Api\Service\bin\Debug\netcoreapp2.2\Microsoft.IdentityMod
 E:\Demo2\Todo\adminVue\Api\Service\bin\Debug\netcoreapp2.2\Microsoft.IdentityModel.Tokens.xml
 E:\Demo2\Todo\adminVue\Api\Service\bin\Debug\netcoreapp2.2\System.IdentityModel.Tokens.Jwt.pdb
 E:\Demo2\Todo\adminVue\Api\Service\bin\Debug\netcoreapp2.2\System.IdentityModel.Tokens.Jwt.xml
+D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.csprojAssemblyReference.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfoInputs.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfo.cs
+D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Service.deps.json
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Service.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Service.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Model.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Persistence.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Model.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Persistence.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.csproj.CopyComplete

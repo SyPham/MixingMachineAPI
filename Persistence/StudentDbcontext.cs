@@ -13,6 +13,7 @@ namespace Persistence
         public DbSet<Rawdata> rawdata { get; set; }
         public DbSet<Location> location { get; set; }
         public DbSet<Machine> machine { get; set; }
+        public DbSet<Setting> setting { get; set; }
         public StudentDbcontext(DbContextOptions<StudentDbcontext> options) :base (options)
         {
 

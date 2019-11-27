@@ -19,3 +19,26 @@ E:\Demo2\Todo\adminVue\Api\Api\obj\Release\netcoreapp2.2\Api.RazorTargetAssembly
 E:\Demo2\Todo\adminVue\Api\Api\obj\Release\netcoreapp2.2\Api.csproj.CopyComplete
 E:\Demo2\Todo\adminVue\Api\Api\obj\Release\netcoreapp2.2\Api.dll
 E:\Demo2\Todo\adminVue\Api\Api\obj\Release\netcoreapp2.2\Api.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\appsettings.Development.json
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\appsettings.json
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Api.deps.json
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Api.runtimeconfig.json
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Api.runtimeconfig.dev.json
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Api.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Api.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Model.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Persistence.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Service.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Persistence.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Service.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Api\bin\Release\netcoreapp2.2\Model.pdb
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.csprojAssemblyReference.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.RazorAssemblyInfo.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.RazorAssemblyInfo.cs
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.AssemblyInfoInputs.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.AssemblyInfo.cs
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.RazorTargetAssemblyInfo.cache
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.csproj.CopyComplete
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.dll
+D:\0.To Do List\IoT\MixingMachineAPI\Api\obj\Release\netcoreapp2.2\Api.pdb

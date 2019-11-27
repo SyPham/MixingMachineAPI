@@ -24,53 +24,18 @@ namespace Api.Controllers
         [HttpGet("detail/{id}")]
         public IActionResult Get(string id)
         {
-            //var model = (from m in _db.machine
-            //            join rw in _db.rawdata on m.machineID equals rw.machineID
-            //            //orderby rw.createddatetime
-            //            //where rw.sequence ==21
-            //            select new
-            //            {
-            //                m.machineID,
-            //                rw.createddatetime,
-            //                m.description,
-            //                rw.sequence,
-            //            }).Distinct();
-            //var arr = new object[]
-            //{
-            //    model.FirstOrDefault().machineID,
-            //    model.LastOrDefault().sequence,
-            //    model.FirstOrDefault().createddatetime,
-            //    model.LastOrDefault().createddatetime
-            //};
-            var model = new List<MachineDetail>();
-
-            //var sequenceList = (from s in _db.rawdata                              
-            //                   select new
-            //                   {
-            //                      s.sequence
-            //                   }
-            //                   ).Distinct().ToList();
-            var sequenceList = _db.rawdata.Where(x => x.machineID == id).Select(y=> y.sequence).Distinct().ToList();
-
-            foreach (var item in sequenceList)
-            {
-                var vm = new MachineDetail();
-                vm.MachineID = _db.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.machineID).FirstOrDefault();
-                vm.StartTime = _db.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.createddatetime).Min();
-                vm.EndTime = _db.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.createddatetime).Max();
-                vm.RPM = _db.rawdata.Where(x => x.machineID.Equals(id) && x.sequence == item).Select(y => y.RPM).Average();
-                model.Add(vm);
-            }
-
-
-            return Ok(model);
+            return Ok(_studentService.GetDetail(id));
+        }
+        // GET api/values
+        [HttpGet("detail/{id}/{value?}")]
+        public IActionResult Get(string id,string value)
+        {
+            return Ok(_studentService.GetDetail(id,value));
         }
         [HttpGet("getrpm/{id}")]
         public async Task<IActionResult> GetRPM(string id)
         {
-           
             return Ok(await _studentService.GetRPM(id));
-
         }
         [HttpGet]
         public IActionResult GetAll()
