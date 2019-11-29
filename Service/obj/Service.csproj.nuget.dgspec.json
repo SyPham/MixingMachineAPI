@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\0.ToDoList\\MixingMachineAPI\\Service\\Service.csproj": {}
+    "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Service\\Service.csproj": {}
   },
   "projects": {
-    "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj": {
+    "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj",
+        "projectUniqueName": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\leo.doan\\.nuget\\packages\\",
-        "outputPath": "F:\\0.ToDoList\\MixingMachineAPI\\Model\\obj\\",
+        "projectPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\sy.pham\\.nuget\\packages\\",
+        "outputPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leo.doan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sy.pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,27 +49,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\0.ToDoList\\MixingMachineAPI\\Persistence\\Persistence.csproj": {
+    "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\0.ToDoList\\MixingMachineAPI\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "F:\\0.ToDoList\\MixingMachineAPI\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\leo.doan\\.nuget\\packages\\",
-        "outputPath": "F:\\0.ToDoList\\MixingMachineAPI\\Persistence\\obj\\",
+        "projectPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\sy.pham\\.nuget\\packages\\",
+        "outputPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leo.doan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sy.pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +88,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj": {
-                "projectPath": "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj"
+              "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj": {
+                "projectPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj"
               }
             }
           }
@@ -119,27 +125,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\0.ToDoList\\MixingMachineAPI\\Service\\Service.csproj": {
+    "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\0.ToDoList\\MixingMachineAPI\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "F:\\0.ToDoList\\MixingMachineAPI\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\leo.doan\\.nuget\\packages\\",
-        "outputPath": "F:\\0.ToDoList\\MixingMachineAPI\\Service\\obj\\",
+        "projectPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\sy.pham\\.nuget\\packages\\",
+        "outputPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\leo.doan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sy.pham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,11 +164,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj": {
-                "projectPath": "F:\\0.ToDoList\\MixingMachineAPI\\Model\\Model.csproj"
+              "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj": {
+                "projectPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Model\\Model.csproj"
               },
-              "F:\\0.ToDoList\\MixingMachineAPI\\Persistence\\Persistence.csproj": {
-                "projectPath": "F:\\0.ToDoList\\MixingMachineAPI\\Persistence\\Persistence.csproj"
+              "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Persistence\\Persistence.csproj": {
+                "projectPath": "D:\\0.To Do List\\IoT\\MixingMachineAPI\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -186,10 +198,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
