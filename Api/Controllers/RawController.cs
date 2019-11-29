@@ -21,16 +21,16 @@ namespace Api.Controllers
             _studentService = studentService;
         }
         // GET api/values
-        [HttpGet("detail/{id}")]
-        public IActionResult Get(string id)
-        {
-            return Ok(_studentService.GetDetail(id));
-        }
+        //[HttpGet("detail/{id}")]
+        //public IActionResult Get(string id)
+        //{
+        //    return Ok(_studentService.GetDetail(id));
+        //}
         // GET api/values
-        [HttpGet("detail/{id}/{value?}")]
-        public IActionResult Get(string id,string value)
+        [HttpGet("detail/{id}/{start?}/{end?}")]
+        public IActionResult Get(string id, string start = "", string end = "")
         {
-            return Ok(_studentService.GetDetail(id,value));
+            return Ok(_studentService.GetDetail(id, start, end));
         }
         [HttpGet("getrpm/{id}")]
         public async Task<IActionResult> GetRPM(string id)
@@ -51,7 +51,13 @@ namespace Api.Controllers
             return Ok(model);
         }
 
+        [HttpGet("exportexcel/{id}/{start?}/{end?}")]
+        public IActionResult ExportExcel(string id, string start, string end)
+        {
+            byte[] data = _studentService.ExportExcel(id, start, end) as byte[];
 
+            return File(data, "application/octet-stream", "DataUpload.xlsx");
+        }
         [HttpGet("getchart/{id}")]
         public IActionResult GetChart(string id)
         {
@@ -69,7 +75,7 @@ namespace Api.Controllers
         public IActionResult Post([FromBody] Student model)
         {
             return Ok();
-             
+
         }
 
         // PUT api/values/5

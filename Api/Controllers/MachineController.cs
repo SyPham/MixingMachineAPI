@@ -12,50 +12,44 @@ namespace Api.Controllers
     public class MachineController : Controller
     {
 
-        private readonly IStudentService _studentService;
-
-        public MachineController(IStudentService studentService)
+        //private readonly IStudentService _studentService;
+        private readonly IMachineService _machineService;
+        public MachineController(IMachineService machineService)
         {
-            _studentService = studentService;
+            _machineService = machineService;
+            
+        }
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_machineService.GetAll());
         }
         // GET api/values
         [HttpGet("{id}")]
         public IActionResult Get(string id)
         {
-            return Ok(_studentService.Test(id));
+            return Ok(_machineService.Get(id));
         }
-
-        [HttpGet]
-        public IActionResult Get()
-        {
-            return Ok(_studentService.Get());
-        }
-        // GET api/values/5
-        //[HttpGet("{id}")]
-        //public IActionResult Get(int id)
-        //{
-        //    return Ok(_studentService.Get(id));
-        //}
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromBody] Student model)
+        public IActionResult Post([FromBody] Machine model)
         {
-            return Ok(_studentService.Add(model));
+            return Ok(_machineService.Add(model));
         }
 
         // PUT api/values/5
         [HttpPut]
-        public IActionResult Put([FromBody] Student model)
+        public IActionResult Put([FromBody] Machine model)
         {
-            return Ok(_studentService.Update(model));
+            return Ok(_machineService.Update(model));
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(string id)
         {
-            return Ok(_studentService.Delete(id));
+            return Ok(_machineService.Delete(id));
         }
     }
 }
