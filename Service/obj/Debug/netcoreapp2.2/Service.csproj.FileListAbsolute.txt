@@ -31,3 +31,17 @@ D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Persistence
 D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Model.pdb
 D:\0.To Do List\IoT\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Persistence.pdb
 D:\0.To Do List\IoT\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.csproj.CopyComplete
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Service.deps.json
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Service.dll
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Service.pdb
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Model.dll
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Persistence.dll
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Model.pdb
+F:\0.ToDoList\MixingMachineAPI\Service\bin\Debug\netcoreapp2.2\Persistence.pdb
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.csprojAssemblyReference.cache
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.csproj.CoreCompileInputs.cache
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfoInputs.cache
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfo.cs
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.csproj.CopyComplete
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.dll
+F:\0.ToDoList\MixingMachineAPI\Service\obj\Debug\netcoreapp2.2\Service.pdb

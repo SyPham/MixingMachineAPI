@@ -146,6 +146,7 @@ namespace Service
             {
                 model = GetMachineDetail(id, startDate, endDate),
                 standard = _studentDbContext.setting.Where(x => x.id.Equals(id)).FirstOrDefault().standardRPM,
+                minstandard = _studentDbContext.setting.Where(x => x.id.Equals(id)).FirstOrDefault().minRPM,
                 location = _studentDbContext.location.Where(x => x.id.Equals(locationID)).FirstOrDefault().locationname,
             };
         }
