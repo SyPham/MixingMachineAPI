@@ -13,55 +13,26 @@ namespace Service
 {
     public interface IMachineService
     {
-        IEnumerable<Student> GetAll();
-        bool Add(Student model);
-        bool Update(Student model);
-        bool Delete(int id);
-        Student Get(int id);
-        object Test(string id);
-        Task<object> GetRPM(string id);
+        IEnumerable<Machine> GetAll();
+        object Add(Machine model);
+        bool Update(Machine model);
+        bool Delete(string id);
+        object Get(string id);
     }
     public class MachineService : IMachineService
     {
-        public readonly StudentDbcontext _studentDbContext;
+        public readonly StudentDbcontext _machineDbContext;
         public MachineService(StudentDbcontext studentDbContext)
         {
-            _studentDbContext = studentDbContext;
+            _machineDbContext = studentDbContext;
         }
-        public object Test(string id)
-        {
-            //var machineID = new SqlParameter("machineID", id);
-            //var sql = @"SELECT * FROM rawdata 
-            //            WHERE machineID = @machineID 
-            //            ORDER BY createddatetime DESC LIMIT 30";
-            var model = _studentDbContext.rawdata
-                .Where(x => x.machineID == id)
-                .OrderByDescending(x => x.createddatetime)
 
-                .Select(x => x.RPM)
-                .Take(30)
-                .ToArray().Reverse();
-            return model;
-
-        }
-        public async Task<object> GetRPM(string id)
+        public IEnumerable<Machine> GetAll()
         {
-            //var machineID = new SqlParameter("machineID", id);
-            //var sql = @"SELECT * FROM rawdata 
-            //            WHERE machineID = @machineID 
-            //            ORDER BY createddatetime DESC LIMIT 30";
-            var model =await _studentDbContext.rawdata.FirstOrDefaultAsync(x => x.machineID == id)
-                            ;
-               
-            return model.RPM;
-
-        }
-        public IEnumerable<Student> GetAll()
-        {
-            var result = new List<Student>();
+            var result = new List<Machine>();
             try
             {
-                result = _studentDbContext.Student.ToList();
+                result = _machineDbContext.machine.ToList();
             }
             catch (System.Exception)
             {
@@ -71,47 +42,52 @@ namespace Service
 
         }
 
-        public Student Get(int id)
+
+        public object Get(string id)
         {
-            var result = new Student();
+            var result = new Machine();
             try
             {
-                result = _studentDbContext.Student.Single(x => x.StudentId == id);
+                result = _machineDbContext.machine.FirstOrDefault(x => x.machineID == id);
             }
             catch (System.Exception)
             {
 
             }
-            return result;
+            return new
+            {
+                data = result,
+                location = _machineDbContext.location
+            };
 
         }
 
-        public bool Add(Student model)
+        public object Add(Machine model)
         {
             try
             {
-                _studentDbContext.Add(model);
-                _studentDbContext.SaveChanges();
+                _machineDbContext.Add(model);
+                _machineDbContext.SaveChanges();
             }
             catch (System.Exception)
             {
 
-                return false;
+                return new { status = false };
             }
-            return true;
+            return new { status = true, locations = _machineDbContext.location };
 
         }
 
-        public bool Update(Student model)
+        public bool Update(Machine model)
         {
             try
             {
-                var bug = _studentDbContext.Student.Single(x => x.StudentId == model.StudentId);
-                bug.Name = model.Name;
-                bug.LastName = model.LastName;
-                bug.Bio = model.Bio;
-                _studentDbContext.Update(bug);
-                _studentDbContext.SaveChanges();
+                var bug = _machineDbContext.machine.Single(x => x.machineID == model.machineID);
+                bug.machineID = model.machineID;
+                bug.description = model.description;
+                bug.locationID = model.locationID;
+                _machineDbContext.Update(bug);
+                _machineDbContext.SaveChanges();
             }
             catch (System.Exception)
             {
@@ -123,12 +99,13 @@ namespace Service
         }
 
 
-        public bool Delete(int id)
+        public bool Delete(string id)
         {
             try
             {
-                _studentDbContext.Entry(new Student { StudentId = id }).State = EntityState.Deleted; ;
-                _studentDbContext.SaveChanges();
+                var item = _machineDbContext.machine.FirstOrDefault(x => x.machineID == id);
+                    _machineDbContext.Remove(item);
+                    _machineDbContext.SaveChanges();
             }
             catch (System.Exception)
             {

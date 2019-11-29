@@ -70,8 +70,8 @@ namespace Api
             services.AddScoped<IAccountService, AccountService>();
 
             services.AddTransient<IStudentService, StudentService>();
-
-            //services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<IMachineService, MachineService>();
+            services.AddTransient<ILocationService, LocationServiceService>();
 
             services.AddCors(options => {
                 options.AddPolicy("AllowSpecificOrigin", builder =>
